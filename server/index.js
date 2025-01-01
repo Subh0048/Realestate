@@ -17,7 +17,10 @@ app.use(cookieParser())
 //     origin:"http://localhost:5173",
 //     credentials:true
 // }))
-app.use(cors())
+cors({
+    origin: "https://estatesahu.netlify.app",
+    credentials: true,
+  })
 
 app.use('/api/user', userRoute)
 app.use("/api/residency", residencyRoute)
