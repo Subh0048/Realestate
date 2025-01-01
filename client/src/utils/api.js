@@ -3,8 +3,8 @@ import dayjs from "dayjs";
 import { toast } from "react-toastify";
 
 export const api = axios.create({
-  baseURL: "https://realestate-vpdh.onrender.com/api",
-  withCredentials: true
+  baseURL: "https://realestate-vpdh.onrender.com/api"
+  // withCredentials: true
 })
  
 
