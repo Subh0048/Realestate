@@ -3,8 +3,13 @@ import dayjs from "dayjs";
 import { toast } from "react-toastify";
 
 export const api = axios.create({
+<<<<<<< HEAD
   baseURL: "http://localhost:8000/api",
   withCredentials:true
+=======
+  baseURL:"http://localhost:8000/api",
+   withCredentials:true
+>>>>>>> 19503e38db0c7d49bb42764982af670518b9a867
 });
 
 export const getAllProperties = async () => {
