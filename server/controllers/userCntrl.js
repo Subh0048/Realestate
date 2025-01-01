@@ -133,9 +133,8 @@ const Userlogin = asynceHandler(async (req, res) => {
     // Set the token in an HTTP-only cookie
     res.cookie("token", token, {
       httpOnly: true,
-      maxAge: age,
-      sameSite: "Strict",
-      secure: process.env.NODE_ENV === "production",
+      maxAge: age
+      
     });
 
     // Send response

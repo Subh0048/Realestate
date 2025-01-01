@@ -13,14 +13,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-    origin: "http://localhost:5173", // Specify the frontend's origin
-    credentials: true,
-}))
+app.use(cors())
+
+app.use('/api/user', userRoute)
+app.use("/api/residency", residencyRoute)
+    
 
 app.listen(PORT, ()=> {
     console.log(`Server is running on port ${PORT}`);
 });
 
-app.use('/api/user', userRoute)
-app.use("/api/residency", residencyRoute)
