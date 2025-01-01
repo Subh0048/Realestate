@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import{ AuthContext} from "../../context/AuthContext";
 
 import { api } from "../../utils/api";
-import "./Signup.css";
+import "./signup.css";
 
 const Signup = () => {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
