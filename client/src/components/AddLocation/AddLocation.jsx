@@ -46,6 +46,8 @@ const AddLocation = ({ propertyDetails, setPropertyDetails, nextStep }) => {
           gap: "3rem",
           marginTop: "3rem",
           flexDirection: "row",
+           width:"100%"
+          
         }}
       >
         {/* left side */}
