@@ -117,7 +117,7 @@ const Signup = () => {
               />
             </div>
             <input type="submit" value="Sign Up" className="btn solid" />
-            <p className="social-text">Or Sign up with social platforms</p>
+          
             
           </form>
         </div>
